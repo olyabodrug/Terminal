@@ -52,12 +52,3 @@ ls -la
 
 echo
 mv r1.txt r4.json ../g3
-
-
-
-=====================
-1) Посмотреть где я - pwd
-2) Создать папку - mkdir foldername
-3) Зайти в папку - cd foldername
-
-
