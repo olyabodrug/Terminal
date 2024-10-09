@@ -1,0 +1,63 @@
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir padawans
+3) Зайти в папку - cd padawans
+4) Создать 3 папки -  mkdir group1 group2 group3
+5) Зайти в любоую папку -  cd group1
+6) Создать 5 файлов (3 txt, 2 json) - touch dz1.txt dz2.txt dz3.txt dz4.json dz5.json
+7) Создать 3 папки - mkdir group11 group12 group13
+8) Вывести список содержимого папки - ls -la
+9) + Открыть любой txt файл - cat > dz1.txt
+10) + написать туда что-нибудь, любой текст - hello world 
+11) + сохранить и выйти - ctrl + c 
+12) Выйти из папки на уровень выше - cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку - mv group1/dz1.txt group1/dz2.txt group2/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку - $ cp group1/dz4.json group1/dz5.json group3/
+15) Найти файл по имени -  find ./ -name dz1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - grep "hello" group2/dz1.txt
+17) вывести несколько первых строк из текстового файла - head -3 group1/dz3.txt
+18) вывести несколько последних строк из текстового файла - tail -3 group1/dz3.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает -less group1/dz3.txt
+20) вывести дату и время - date +"%d-%m-%y"
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request -  curl http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+vi echo.sh
+
+#!/bin/bash
+
+echo
+cd padawans
+
+echo
+mkdir g1 g2 g3
+
+echo
+cd g1
+
+echo
+touch r1.txt r2.txt r3.txt r4.json r5.json
+
+echo
+mkdir g11 g12 g13
+
+echo
+ls -la
+
+echo
+mv r1.txt r4.json ../g3
+
+
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+
+
